@@ -38,7 +38,6 @@
 
         .card-container {
             background-color: var(--ivory);
-            background-image: url('https://www.transparenttextures.com/patterns/white-marble.png');
             position: relative;
             box-shadow: 0 20px 50px rgba(0,0,0,0.1);
             overflow: hidden;
@@ -119,9 +118,6 @@
 
     <div class="card-container">
         <div class="card-border"></div>
-
-        <img src="https://raw.githubusercontent.com/youcef/assets/main/white_rose_corner.png" onerror="this.src='https://cdn.pixabay.com/photo/2017/02/16/19/47/flowers-2072382_1280.png'" class="floral-top-left" alt="Floral decoration">
-        <img src="https://raw.githubusercontent.com/youcef/assets/main/white_rose_corner.png" onerror="this.src='https://cdn.pixabay.com/photo/2017/02/16/19/47/flowers-2072382_1280.png'" class="floral-bottom-right" alt="Floral decoration">
 
         <div class="content-wrapper">
             <!-- Header -->
