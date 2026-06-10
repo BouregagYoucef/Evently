@@ -26,7 +26,7 @@
         /* CONTENT ZONE: occupies middle 60% */
         .content {
             position: absolute;
-            top: 35%;
+            top: 24%;
             left: 20%;
             width: 60%;
             height: 60%;

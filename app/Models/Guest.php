@@ -58,7 +58,8 @@ class Guest extends Model
         });
 
         static::deleting(function ($guest) {
-            $guest->invitations->each->delete();
+            // Use query builder (not lazy-loaded property) to comply with strict mode
+            $guest->invitations()->get()->each->delete();
         });
     }
 }

@@ -102,8 +102,8 @@ class EventForm
                                     'textarea' => \Filament\Forms\Components\Textarea::make('content_data.' . $field['name']),
                                     'date' => \Filament\Forms\Components\DatePicker::make('content_data.' . $field['name']),
                                     'color' => \Filament\Forms\Components\ColorPicker::make('content_data.' . $field['name']),
-                                    'image' => \Filament\Forms\Components\FileUpload::make('content_data.' . $field['name'])->image()->directory('events/images')->imageEditor(),
-                                    'gallery' => \Filament\Forms\Components\FileUpload::make('content_data.' . $field['name'])->image()->multiple()->directory('events/gallery')->reorderable()->imageEditor(),
+                                    'image' => \Filament\Forms\Components\FileUpload::make('content_data.' . $field['name'])->image()->disk('public')->directory('events/images')->imageEditor(),
+                                    'gallery' => \Filament\Forms\Components\FileUpload::make('content_data.' . $field['name'])->image()->multiple()->disk('public')->directory('events/gallery')->reorderable()->imageEditor(),
                                     default => \Filament\Forms\Components\TextInput::make('content_data.' . $field['name']),
                                 };
 

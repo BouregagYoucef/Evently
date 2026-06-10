@@ -21,6 +21,7 @@ class InvitationPolicy
      */
     public function view(User $user, Invitation $invitation): bool
     {
+        $invitation->loadMissing('event');
         return $user->id === $invitation->event->host_id;
     }
 
@@ -37,6 +38,7 @@ class InvitationPolicy
      */
     public function update(User $user, Invitation $invitation): bool
     {
+        $invitation->loadMissing('event');
         return $user->id === $invitation->event->host_id;
     }
 
@@ -45,6 +47,7 @@ class InvitationPolicy
      */
     public function delete(User $user, Invitation $invitation): bool
     {
+        $invitation->loadMissing('event');
         return $user->id === $invitation->event->host_id;
     }
 

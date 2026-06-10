@@ -40,7 +40,7 @@
                 <p class="text-gray-400 mb-10 text-lg">نرجو تأكيد حضوركم لمشاركتنا هذه الليلة الاستثنائية.</p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button @click="submitRsvp('{{ $invitation->uuid }}', true)" 
+                    <button type="button" @click="submitRsvp('{{ $invitation->uuid }}', true)" 
                             class="px-10 py-4 rounded-full bg-white text-black font-bold text-lg hover:bg-gray-200 transition disabled:opacity-50"
                             :disabled="isSubmitting">
                         <span x-show="!isSubmitting">تأكيد الحضور</span>
@@ -49,7 +49,7 @@
                         </span>
                     </button>
                     
-                    <button @click="submitRsvp('{{ $invitation->uuid }}', false)" 
+                    <button type="button" @click="submitRsvp('{{ $invitation->uuid }}', false)" 
                             class="px-10 py-4 rounded-full border border-gray-600 text-gray-300 font-bold text-lg hover:bg-gray-800 transition disabled:opacity-50"
                             :disabled="isSubmitting">
                         أعتذر عن الحضور
@@ -76,7 +76,14 @@
             <div>
                 <div class="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-6 text-red-400 text-2xl">✕</div>
                 <h2 class="text-3xl text-white mb-2">شكراً لك</h2>
-                <p class="text-gray-400">نتمنى أن نراك في مناسبات قادمة بإذن الله.</p>
+                <p class="text-gray-400 mb-8">نتمنى أن نراك في مناسبات قادمة بإذن الله.</p>
+                
+                <button type="button" @click="submitRsvp('{{ $invitation->uuid }}', true)" 
+                        class="text-gray-300 hover:text-white underline transition disabled:opacity-50"
+                        :disabled="isSubmitting">
+                    <span x-show="!isSubmitting">تغيير رأيي وتأكيد الحضور</span>
+                    <span x-show="isSubmitting">جاري التأكيد...</span>
+                </button>
             </div>
         </template>
 

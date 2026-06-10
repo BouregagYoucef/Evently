@@ -78,7 +78,12 @@
                 step1_title: 'حمّل تصميمك', step1_desc: 'حمّل تصميم دعوتك أو اختر من قوالبنا السينمائية الفاخرة.', step2_title: 'أضف معازيمك', step2_desc: 'أضف أسماء ضيوفك بسهولة عبر إدخال يدوي أو استيراد Excel.', step3_title: 'إرسال وتتبع', step3_desc: 'بضغطة زر، ترسل الدعوات عبر واتساب وتابع الردود مباشرة.',
                 feature_title: 'المميزات', feature_subtitle: 'كل ما تحتاجه لاستضافة المناسبة المثالية', feature_desc: 'أدوات قوية مصممة لجعل التخطيط وإدارة الضيوف أسهل وأرقى.',
                 f1_title: 'إرسال دعوات عبر واتساب', f1_desc: 'أرسل دعواتك مباشرة عبر واتساب مع رابط خاص لكل ضيف.', f2_title: 'تأكيد الحضور التلقائي', f2_desc: 'متابعة لحظية لمن سيحضر، عدد المرافقين، ومن اعتذر.', f3_title: 'تذاكر الباركود', f3_desc: 'إصدار تذاكر بباركود لكل ضيف لضمان الدخول السلس.', f4_title: 'واجهات سينمائية', f4_desc: 'أبهر ضيوفك بواجهات متحركة احترافية.',
-                pricing_title: 'باقات وأسعار بسيطة', pricing_subtitle: 'اختر الباقة التي تناسب حجم مناسبتك.', free: 'مجاني', starter: 'البداية', starter_desc: 'مثالية للمناسبات العائلية الصغيرة.', p1_f1: 'فعالية واحدة', p1_f2: 'حتى 50 ضيف', p1_f3: 'قوالب قياسية', popular: 'الأكثر طلباً', elite: 'الفاخرة (Elite)', elite_desc: 'لحفلات الزفاف والمناسبات الكبرى.', elite_price: '$49', per_event: '/ للفعالية', p2_f1: 'عدد غير محدود من الفعاليات', p2_f2: 'حتى 10,000 ضيف', p2_f3: 'قوالب سينمائية فاخرة', p2_f4: 'تصدير تذاكر الباركود', go_elite: 'اشترك الآن', footer_rights: 'جميع الحقوق محفوظة'
+                pricing_title: 'باقات وأسعار بسيطة', pricing_subtitle: 'اختر الباقة التي تناسب حجم مناسبتك.',
+                common_features: 'جميع الخطط تشمل: وصول غير محدود لجميع القوالب بما فيها الـ Premium (هدية)، مع إمكانية تحميل كل مدعو لدعوة PDF احترافية مخصصة باسمه وموعد المناسبة بجميع التفاصيل.',
+                p1_title: 'المجاني', p1_price: '0 دج', p1_desc: 'لتجربة المنصة.', p1_f1: 'مناسبة واحدة (1 Event)', p1_f2: '3 دعوات تجريبية فقط',
+                p2_title: 'عرض الأفراد', p2_price: '4000 دج', p2_desc: 'للمناسبات الخاصة.', p2_f1: 'مناسبة واحدة (1 Event)', p2_f2: '300 دعوة', p2_f3: 'إرسال (إيميل وواتساب) حسب الطلب', p2_f4: 'لوحة تحكم كاملة (هدية)',
+                p3_title: 'قاعات الحفلات', p3_price: 'حسب الطلب', p3_desc: 'للأعمال والمؤسسات.', p3_f1: 'مناسبات غير محدودة (حسب الطلب)', p3_f2: '350 دعوة لكل مناسبة', p3_f3: 'إرسال إيميل مجاني (وواتساب حسب الطلب)', p3_f4: 'إحصائيات متقدمة جداً ولوحة تحكم كاملة',
+                go_elite: 'اشترك الآن', footer_rights: 'جميع الحقوق محفوظة'
             },
             en: {
                 home: 'Home', features: 'Features', pricing: 'Pricing', contact: 'Contact', login: 'Log In', get_started: 'Get Started',
@@ -90,7 +95,12 @@
                 step1_title: 'Upload Design', step1_desc: 'Upload your own design or choose from our premium cinematic templates.', step2_title: 'Add Guests', step2_desc: 'Easily add your guests manually or import them via Excel.', step3_title: 'Send & Track', step3_desc: 'Send invites via WhatsApp with one click and track RSVPs live.',
                 feature_title: 'Features', feature_subtitle: 'Everything You Need for the Perfect Event', feature_desc: 'Powerful tools designed to make event planning and guest management elegant and effortless.',
                 f1_title: 'WhatsApp Invitations', f1_desc: 'Send invites directly via WhatsApp with a unique link for each guest.', f2_title: 'Automated RSVP', f2_desc: 'Real-time tracking of who is attending, companions, and apologies.', f3_title: 'QR Code Tickets', f3_desc: 'Generate tickets with QR codes for secure check-in.', f4_title: 'Cinematic Themes', f4_desc: 'Wow your guests with professional animated interfaces.',
-                pricing_title: 'Simple Pricing', pricing_subtitle: 'Choose the plan that fits your event size.', free: 'Free', starter: 'Starter', starter_desc: 'Perfect for small family gatherings.', p1_f1: '1 Event', p1_f2: 'Up to 50 Guests', p1_f3: 'Standard Templates', popular: 'POPULAR', elite: 'Elite Host', elite_desc: 'For weddings and major events.', elite_price: '$49', per_event: '/ event', p2_f1: 'Unlimited Events', p2_f2: 'Up to 10,000 Guests', p2_f3: 'Premium Cinematic Templates', p2_f4: 'Export QR Tickets', go_elite: 'Go Elite', footer_rights: 'All rights reserved'
+                pricing_title: 'Simple Pricing', pricing_subtitle: 'Choose the plan that fits your event size.',
+                common_features: 'All plans include: Unlimited template choices including Premium (Gift), plus customizable PDF professional invitations for each guest.',
+                p1_title: 'Free', p1_price: 'Free', p1_desc: 'Test the platform.', p1_f1: '1 Event', p1_f2: '3 Trial Invitations only',
+                p2_title: 'Personal', p2_price: '4000 DZD', p2_desc: 'For personal events.', p2_f1: '1 Event', p2_f2: '300 Invitations', p2_f3: 'Email/WhatsApp upon request', p2_f4: 'Full control panel (Gift)',
+                p3_title: 'Halls & Business', p3_price: 'Custom', p3_desc: 'For event venues.', p3_f1: 'Unlimited Events', p3_f2: '350 Invites per Event', p3_f3: 'Free Email (WhatsApp on request)', p3_f4: 'Advanced Analytics & Full Dashboard',
+                go_elite: 'Subscribe Now', footer_rights: 'All rights reserved'
             }
         };
 
@@ -303,34 +313,54 @@
     <!-- Pricing -->
     <section id="pricing" class="py-24 bg-white/30 border-y border-gray-100">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
+            <div class="text-center mb-10">
                 <h2 class="text-3xl font-black text-gray-900 mb-4" x-text="t('pricing_title')"></h2>
-                <p class="text-gray-500 font-medium" x-text="t('pricing_subtitle')"></p>
+                <p class="text-gray-500 font-medium max-w-2xl mx-auto text-lg mb-6" x-text="t('pricing_subtitle')"></p>
+                <div class="bg-yellow-50/80 backdrop-blur-md text-yellow-800 p-5 rounded-2xl inline-block text-sm md:text-base font-bold shadow-sm border border-yellow-200/50 max-w-4xl mx-auto leading-relaxed">
+                    ✨ <span x-text="t('common_features')"></span>
+                </div>
             </div>
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm">
-                    <h3 class="text-2xl font-bold mb-2 text-gray-900" x-text="t('starter')"></h3>
-                    <p class="text-gray-500 mb-6 font-medium" x-text="t('starter_desc')"></p>
-                    <div class="text-4xl font-black mb-8 text-gray-900" x-text="t('free')"></div>
-                    <ul class="space-y-4 mb-8 text-gray-600 font-bold">
+            
+            <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12">
+                <!-- Free Plan -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm flex flex-col hover:shadow-lg transition-shadow">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900" x-text="t('p1_title')"></h3>
+                    <p class="text-gray-500 mb-6 font-medium" x-text="t('p1_desc')"></p>
+                    <div class="text-4xl font-black mb-8 text-gray-900" x-text="t('p1_price')"></div>
+                    <ul class="space-y-4 mb-8 text-gray-600 font-bold flex-grow">
                         <li>✓ <span x-text="t('p1_f1')"></span></li>
                         <li>✓ <span x-text="t('p1_f2')"></span></li>
-                        <li>✓ <span x-text="t('p1_f3')"></span></li>
                     </ul>
                     <a href="/dashboard/register" class="block w-full text-center bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-900 font-bold px-6 py-3 rounded-xl transition-colors" x-text="t('get_started')"></a>
                 </div>
-                <div class="bg-gray-900 p-8 rounded-3xl border border-[#C19A6B] relative shadow-2xl transform md:-translate-y-4">
-                    <div class="absolute top-0 right-0 bg-[#C19A6B] text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl" x-text="t('popular')"></div>
-                    <h3 class="text-2xl font-bold mb-2 text-[#C19A6B]" x-text="t('elite')"></h3>
-                    <p class="text-gray-400 mb-6 font-medium" x-text="t('elite_desc')"></p>
-                    <div class="text-4xl font-black mb-8 text-white"><span x-text="t('elite_price')"></span><span class="text-lg text-gray-500 font-medium" x-text="t('per_event')"></span></div>
-                    <ul class="space-y-4 mb-8 text-gray-300 font-bold">
+
+                <!-- Personal Plan -->
+                <div class="bg-gray-900 p-8 rounded-3xl border border-[#C19A6B] relative shadow-2xl transform lg:-translate-y-4 flex flex-col">
+                    <div class="absolute top-0 right-0 bg-[#C19A6B] text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">الأكثر طلباً</div>
+                    <h3 class="text-2xl font-bold mb-2 text-[#C19A6B]" x-text="t('p2_title')"></h3>
+                    <p class="text-gray-400 mb-6 font-medium" x-text="t('p2_desc')"></p>
+                    <div class="text-4xl font-black mb-8 text-white" x-text="t('p2_price')"></div>
+                    <ul class="space-y-4 mb-8 text-gray-300 font-bold flex-grow">
                         <li>✓ <span x-text="t('p2_f1')"></span></li>
                         <li>✓ <span x-text="t('p2_f2')"></span></li>
                         <li>✓ <span x-text="t('p2_f3')"></span></li>
-                        <li>✓ <span x-text="t('p2_f4')"></span></li>
+                        <li>🎁 <span class="text-[#C19A6B]" x-text="t('p2_f4')"></span></li>
                     </ul>
                     <a href="/dashboard/register" class="block w-full text-center bg-[#C19A6B] text-white hover:bg-yellow-600 font-bold px-6 py-3 rounded-xl transition-colors shadow-lg shadow-[#C19A6B]/30" x-text="t('go_elite')"></a>
+                </div>
+
+                <!-- Halls Plan -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm flex flex-col hover:shadow-lg transition-shadow">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900" x-text="t('p3_title')"></h3>
+                    <p class="text-gray-500 mb-6 font-medium" x-text="t('p3_desc')"></p>
+                    <div class="text-4xl font-black mb-8 text-gray-900" x-text="t('p3_price')"></div>
+                    <ul class="space-y-4 mb-8 text-gray-600 font-bold flex-grow">
+                        <li>✓ <span x-text="t('p3_f1')"></span></li>
+                        <li>✓ <span x-text="t('p3_f2')"></span></li>
+                        <li>✓ <span x-text="t('p3_f3')"></span></li>
+                        <li>📊 <span class="text-blue-600" x-text="t('p3_f4')"></span></li>
+                    </ul>
+                    <a href="/contact" class="block w-full text-center bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-900 font-bold px-6 py-3 rounded-xl transition-colors" x-text="t('contact')"></a>
                 </div>
             </div>
         </div>

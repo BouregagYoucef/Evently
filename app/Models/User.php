@@ -18,7 +18,7 @@ use Filament\Panel;
 class User extends Authenticatable implements FilamentUser
 {
     protected $fillable = [
-        'name', 'email', 'password', 'role', 'is_approved', 'max_events', 'max_guests_per_event'
+        'name', 'email', 'password', 'email_verified_at', 'role', 'is_approved', 'max_events', 'max_guests_per_event'
     ];
     
     protected $hidden = [

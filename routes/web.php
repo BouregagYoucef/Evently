@@ -26,5 +26,5 @@ Route::get('/i/{uuid}/ticket', [TicketController::class, 'download'])->name('pri
 // Host Scanner API Route
 Route::middleware('auth')->post('/host/scan-ticket', [\App\Http\Controllers\TicketScannerController::class, 'scan'])->name('host.scan-ticket');
 
-// Public Live Template Preview
-Route::get('/templates/{template}/preview', [\App\Http\Controllers\TemplatePreviewController::class, 'preview'])->name('template.preview');
+// Public Live Template Preview (rate-limited to prevent scraping)
+Route::middleware('throttle:30,1')->get('/templates/{template}/preview', [\App\Http\Controllers\TemplatePreviewController::class, 'preview'])->name('template.preview');

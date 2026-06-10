@@ -88,11 +88,6 @@ class GuestsRelationManager extends RelationManager
                     ])
                     ->action(function (array $data, RelationManager $livewire) {
                         $guest = $livewire->getOwnerRecord()->guests()->create($data);
-                        $guest->invitations()->create([
-                            'event_id' => $livewire->getOwnerRecord()->id,
-                            'uuid' => (string) \Illuminate\Support\Str::uuid(),
-                            'status' => 'PENDING',
-                        ]);
                         Notification::make()->title('Guest added successfully')->success()->send();
                     }),
                 \Filament\Actions\Action::make('import_csv')

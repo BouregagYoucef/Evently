@@ -2,9 +2,10 @@
 
 namespace App\Filament\Host\Resources\Guests\Tables;
 
+use Filament\Actions\Action;
+use Filament\Actions\EditAction;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
-use Filament\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
@@ -52,8 +53,8 @@ class GuestsTable
                 //
             ])
             ->recordActions([
-                \Filament\Tables\Actions\EditAction::make(),
-                \Filament\Tables\Actions\Action::make('copyLink')
+                EditAction::make(),
+                Action::make('copyLink')
                     ->label('Copy Link')
                     ->icon('heroicon-o-link')
                     ->color('gray')
@@ -67,7 +68,7 @@ class GuestsTable
                         }
                         return [];
                     }),
-                \Filament\Tables\Actions\Action::make('sendEmail')
+                Action::make('sendEmail')
                     ->label('Send Invite')
                     ->icon('heroicon-o-envelope')
                     ->color('primary')

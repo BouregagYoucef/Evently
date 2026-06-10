@@ -68,12 +68,6 @@ class ProcessCsvImportJob implements ShouldQueue
                 'type' => strtoupper($data['type'] ?? 'REGULAR'),
                 'companions_count' => intval($data['companions_count'] ?? 0),
             ]);
-
-            $guest->invitation()->create([
-                'event_id' => $event->id,
-                'uuid' => Str::uuid(),
-                'status' => 'PENDING',
-            ]);
         }
 
         fclose($file);

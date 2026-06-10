@@ -21,6 +21,7 @@ class GuestPolicy
      */
     public function view(User $user, Guest $guest): bool
     {
+        $guest->loadMissing('event');
         return $user->id === $guest->event->host_id;
     }
 
@@ -37,6 +38,7 @@ class GuestPolicy
      */
     public function update(User $user, Guest $guest): bool
     {
+        $guest->loadMissing('event');
         return $user->id === $guest->event->host_id;
     }
 
@@ -45,6 +47,7 @@ class GuestPolicy
      */
     public function delete(User $user, Guest $guest): bool
     {
+        $guest->loadMissing('event');
         return $user->id === $guest->event->host_id;
     }
 

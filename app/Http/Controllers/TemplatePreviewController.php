@@ -28,9 +28,9 @@ class TemplatePreviewController extends Controller
                     $contentData[$name] = 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop';
                 } elseif ($type === 'gallery') {
                     $contentData[$name] = [
-                        'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1000&auto=format&fit=crop',
+                        'https://plus.unsplash.com/premium_photo-1674027290746-a54ed7de32b5',
                         'https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1000&auto=format&fit=crop',
-                        'https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop',
+                        'https://images.unsplash.com/photo-1606800052052-a08af7148866',
                     ];
                 } elseif ($type === 'textarea') {
                     $nameLower = strtolower($name);

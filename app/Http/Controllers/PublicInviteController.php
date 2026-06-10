@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\Event;
 use App\Models\Guest;
 use App\Services\InvitationService;
+use App\Http\Controllers\Concerns\ResolvesMediaPaths;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
 class PublicInviteController extends Controller
 {
+    use ResolvesMediaPaths;
     /**
      * Display the public event page.
      */
@@ -22,6 +24,9 @@ class PublicInviteController extends Controller
 
         // Increment visits in the background using Laravel 11 defer() to avoid slowing down the response
         defer(fn () => $event->increment('public_visits'));
+
+        // Resolve storage paths to full URLs for theme display
+        $event = $this->resolveEventMedia($event);
 
         // Inject data to the theme views
         $theme = $event->template->theme_identifier;
@@ -55,7 +60,15 @@ class PublicInviteController extends Controller
             ], 422);
         }
 
-        // Create the Guest
+        // Enforce guest quota: prevent registration when event is full
+        if ($event->guests()->count() >= $event->max_guests) {
+            return response()->json([
+                'success' => false,
+                'message' => 'عذراً، اكتمل عدد المسجلين في هذه المناسبة.'
+            ], 403);
+        }
+
+        // Create the Guest — Guest::booted() automatically creates the invitation (PENDING)
         $guest = $event->guests()->create([
             'name' => $request->name,
             'phone' => $request->phone,
@@ -64,8 +77,8 @@ class PublicInviteController extends Controller
             'companions_count' => $request->companions_count ?? 0,
         ]);
 
-        // Generate the Private Invitation
-        $invitation = $invitationService->createInvitation($guest, $event);
+        // Reuse the auto-created invitation instead of creating a duplicate
+        $invitation = $guest->invitations()->first();
 
         // Auto-confirm RSVP instantly for public link registrations
         $invitationService->processRsvp($invitation, true);
