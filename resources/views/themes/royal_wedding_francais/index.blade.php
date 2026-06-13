@@ -350,7 +350,7 @@
                 setupPreloader() {
                     const tl = gsap.timeline({
                         onComplete: () => {
-                            setTimeout(() => this.startExperience(), 800);
+                            setTimeout(() => this.startExperience(), 100);
                         }
                     });
                     tl.to("#loader-names", {opacity: 1, y: -20, duration: 1.5, ease: "power2.out", delay: 0.5});

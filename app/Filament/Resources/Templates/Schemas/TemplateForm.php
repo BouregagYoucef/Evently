@@ -35,6 +35,7 @@ class TemplateForm
                     ->required(),
                 \Filament\Forms\Components\FileUpload::make('preview_image')
                     ->image()
+                    ->disk('public')
                     ->directory('templates/previews'),
                 \Filament\Forms\Components\Textarea::make('html_content')
                     ->label('HTML / Blade Code')

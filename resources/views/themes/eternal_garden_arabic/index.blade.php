@@ -380,7 +380,7 @@
                 setupPreloader() {
                     const tl = gsap.timeline({
                         onComplete: () => {
-                            setTimeout(() => this.startExperience(), 1000);
+                            setTimeout(() => this.startExperience(), 100);
                         }
                     });
                     // Bismillah fades in, stays, fades out

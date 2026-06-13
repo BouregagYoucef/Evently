@@ -409,9 +409,9 @@
                 window.addEventListener('resize', () => this.resize());
                 
                 // Prelude logic
-                setTimeout(() => this.spawnPetal(), 1000); // 1st
-                setTimeout(() => this.spawnPetal(), 3000); // 2nd
-                setTimeout(() => this.spawnPetal(), 4500); // 3rd
+                setTimeout(() => this.spawnPetal(), 100); // 1st
+                setTimeout(() => this.spawnPetal(), 400); // 2nd
+                setTimeout(() => this.spawnPetal(), 800); // 3rd
                 
                 this.animate();
             }
@@ -571,12 +571,12 @@
                 setupPrelude() {
                     const tl = gsap.timeline({
                         onComplete: () => {
-                            setTimeout(() => this.startExperience(), 500);
+                            setTimeout(() => this.startExperience(), 100);
                         }
                     });
                     
-                    tl.to("#prelude-text", {opacity: 1, duration: 2.5, delay: 6, ease: "power2.inOut"})
-                      .to("#prelude-text", {opacity: 0, duration: 2, delay: 2, ease: "power2.inOut"});
+                    tl.to("#prelude-text", {opacity: 1, duration: 2.5, delay: 1, ease: "power2.inOut"})
+                      .to("#prelude-text", {opacity: 0, duration: 2, delay: 1, ease: "power2.inOut"});
                 },
 
                 startExperience() {

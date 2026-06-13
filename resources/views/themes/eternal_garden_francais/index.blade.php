@@ -377,7 +377,7 @@
                 setupPreloader() {
                     const tl = gsap.timeline({
                         onComplete: () => {
-                            setTimeout(() => this.startExperience(), 1000);
+                            setTimeout(() => this.startExperience(), 100);
                         }
                     });
                     tl.to("#bismillah-text", {opacity: 1, duration: 2, ease: "power2.inOut"})

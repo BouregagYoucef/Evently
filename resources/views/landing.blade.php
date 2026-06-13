@@ -128,16 +128,6 @@
 
         window.addEventListener('load', () => {
             setTimeout(() => { document.getElementById('page-loader').classList.add('hidden-loader'); }, 800);
-            
-            // Defer iframe loading
-            setTimeout(() => {
-                const iframes = document.querySelectorAll('.template-iframe');
-                iframes.forEach(iframe => {
-                    if(iframe.dataset.src) {
-                        iframe.src = iframe.dataset.src;
-                    }
-                });
-            }, 1000);
         });
     </script>
 </head>
@@ -354,9 +344,12 @@
                     <div class="bg-white p-6 rounded-3xl border border-gray-100 hover:shadow-2xl hover:border-[#C19A6B]/50 transition-all group">
                         <div class="flex justify-center mb-6">
                             <div class="relative w-full bg-gray-50 overflow-hidden shadow-lg group-hover:shadow-[0_0_30px_rgba(193,154,107,0.2)] transition-all duration-500 rounded-[20px] border-4 border-white" style="max-width: 320px; aspect-ratio: 9/16;">
-                                <iframe data-src="{{ route('template.preview', $template->id) }}" class="template-iframe w-full h-full border-none pointer-events-none transition duration-500"></iframe>
-                                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/70 backdrop-blur-sm rounded-[16px]">
-                                    <a href="{{ route('template.preview', $template->id) }}" target="_blank" class="px-5 py-3 rounded-full bg-[#C19A6B] text-white font-bold text-sm shadow-xl hover:scale-105 transition flex items-center gap-2" x-text="t('live_preview')"></a>
+                                <img src="{{ $template->preview_image ? (filter_var($template->preview_image, FILTER_VALIDATE_URL) ? $template->preview_image : Storage::url($template->preview_image)) : 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop' }}" alt="{{ $template->name }}" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/40 backdrop-blur-sm rounded-[16px]">
+                                    <a href="{{ route('template.preview', $template->id) }}" target="_blank" class="px-5 py-3 rounded-full bg-[#C19A6B] text-white font-bold text-sm shadow-xl hover:scale-105 transition flex items-center gap-2">
+                                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span x-text="t('live_preview')"></span>
+                                    </a>
                                 </div>
                             </div>
                         </div>

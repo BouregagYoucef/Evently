@@ -286,7 +286,7 @@
                 setupPreloader() {
                     const tl = gsap.timeline({
                         onComplete: () => {
-                            setTimeout(() => this.startExperience(), 800);
+                            setTimeout(() => this.startExperience(), 100);
                         }
                     });
                     

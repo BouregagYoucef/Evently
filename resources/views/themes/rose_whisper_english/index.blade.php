@@ -562,12 +562,12 @@
                 setupPrelude() {
                     const tl = gsap.timeline({
                         onComplete: () => {
-                            setTimeout(() => this.startExperience(), 500);
+                            setTimeout(() => this.startExperience(), 100);
                         }
                     });
                     
-                    tl.to("#prelude-text", {opacity: 1, duration: 2.5, delay: 6, ease: "power2.inOut"})
-                      .to("#prelude-text", {opacity: 0, duration: 2, delay: 2, ease: "power2.inOut"});
+                    tl.to("#prelude-text", {opacity: 1, duration: 2.5, delay: 1, ease: "power2.inOut"})
+                      .to("#prelude-text", {opacity: 0, duration: 2, delay: 1, ease: "power2.inOut"});
                 },
 
                 startExperience() {
